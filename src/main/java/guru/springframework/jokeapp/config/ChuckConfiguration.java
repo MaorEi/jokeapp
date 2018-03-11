@@ -7,10 +7,10 @@ import org.springframework.context.annotation.Configuration;
 
 //THIS IS AN EXAMPLE OF BEAN CONFIGURATION IN JAVA
 //Because the configuration is in the same package the spring boot will pick it up as a Spring Component
-@Configuration
+//@Configuration
 public class ChuckConfiguration {
     //And here we tell Spring we want it as a Bean.
-    @Bean
+    //@Bean
     public ChuckNorrisQuotes chuckNorrisQuotes(){
         return new ChuckNorrisQuotes();
     }
