@@ -10,8 +10,8 @@ public class JokeServiceImpl implements JokeService {
     // I could have just create it inside my method, But then every time it ran, we'd have the overhead of that object creation.
     private final ChuckNorrisQuotes chuckNorrisQuotes;
 
-    public JokeServiceImpl() {
-        this.chuckNorrisQuotes = new ChuckNorrisQuotes();
+    public JokeServiceImpl(ChuckNorrisQuotes chuckNorrisQuotes) {
+        this.chuckNorrisQuotes = chuckNorrisQuotes;
     }
 
     @Override
